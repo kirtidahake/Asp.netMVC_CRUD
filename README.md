@@ -31,4 +31,10 @@ steps:
 8. created action result(Index) in home-controller
 9. added view of index 
 10. List is displayed after executing
+11. Create actoin method of create in home controller[HttpGet]
+12. Create actoin method of create(Employee e) in home controller[HttpPost]
+13. Add view of create
+14. Added validation in create actin method
+15. Added viewbag in create.cshtml (@Html.Raw(ViewBag.CreateMessage)
+)
 
