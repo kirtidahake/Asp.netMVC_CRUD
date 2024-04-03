@@ -30,5 +30,5 @@ steps:
 7. enabled migration
 8. created action result(Index) in home-controller
 9. added view of index 
-
+10. List is displayed after executing
 
