@@ -4,12 +4,13 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace Asp.netMVC_CRUD.Models
 {
     public class Employee
     {
-        [Key]
+        [Key] //This is validation
         [Required]
         [DisplayName("EMP ID")]
         public int Id { get; set; }

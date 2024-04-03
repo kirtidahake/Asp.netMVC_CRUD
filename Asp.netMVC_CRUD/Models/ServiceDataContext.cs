@@ -4,9 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 
+
 namespace Asp.netMVC_CRUD.Models
 {
-    public class ServiceContext : DbContext
+    public class ServiceDataContext : DbContext
     {
         public DbSet<Employee> emp { get; set; }
     }
