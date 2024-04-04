@@ -3,7 +3,7 @@ youtube link = https://www.youtube.com/watch?v=nxxC9AJQXn8
 
 action methods in mvc 
 
-CRUD
+CRUD    
 C = Create
 R = Read , Retrieve
 U = Update
@@ -28,7 +28,13 @@ steps:
 5. added entity into service context (using System.Data.Entity;)
 6. wrote connection string in web.config
 7. enabled migration
-8. created action method(Index) in home-controller
+8. created action result(Index) in home-controller
 9. added view of index 
-
+10. List is displayed after executing
+11. Create actoin method of create in home controller[HttpGet]
+12. Create actoin method of create(Employee e) in home controller[HttpPost]
+13. Add view of create
+14. Added validation in create actin method
+15. Added viewbag in create.cshtml (@Html.Raw(ViewBag.CreateMessage)
+)
 
