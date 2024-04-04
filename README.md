@@ -23,18 +23,35 @@ web.config = to manage application
 steps:
 1. created model
 2. created service context
-3. created table
-4. nuget package manager -> entity framework download 
-5. added entity into service context (using System.Data.Entity;)
-6. wrote connection string in web.config
-7. enabled migration
-8. created action result(Index) in home-controller
-9. added view of index 
-10. List is displayed after executing
-11. Create actoin method of create in home controller[HttpGet]
-12. Create actoin method of create(Employee e) in home controller[HttpPost]
-13. Add view of create
-14. Added validation in create actin method
-15. Added viewbag in create.cshtml (@Html.Raw(ViewBag.CreateMessage)
+3. create dbset<Student> in service context
+4. 
+5. nuget package manager -> entity framework download 
+6. added entity into service context (using System.Data.Entity;)
+7. wrote connection string in web.config
+8. enabled migration
+10. created action result(Index) in home-controller
+11. created serviceContext's object in home controller, using projectname.model;
+12. created demo table in sql
+13. added view of index 
+14. List is displayed after executing
+15. Create actoin method of create in home controller[HttpGet]
+16. Create actoin method of create(Employee e) in home controller[HttpPost]
+17. Add view of create
+18. Added validation in create action method
+19. Added viewbag in index.cshtml (@Html.Raw(ViewBag.CreateMessage)
 )
 
+
+
+
+----------connecxtion string in web.config---------------- 
+<connectionStrings>
+	<add name="ServicesContext" connectionString="data source=KIRTILAPTOP\SQLEXPRESS;database=student_db;integrated security=true" providerName="system.data.sqlclient"/>
+</connectionStrings>
+
+-----------enable migrations---------------
+tools -> nuget package manger -> package manager console
+write in console - 
+Enable-Migrations
+add-migration migration_name_here
+update-database
