@@ -37,7 +37,7 @@ steps:
 15. Create actoin method of create in home controller[HttpGet]
 16. Create actoin method of create(Employee e) in home controller[HttpPost]
 17. Add view of create
-18. Added validation in create actin method
+18. Added validation in create action method
 19. Added viewbag in index.cshtml (@Html.Raw(ViewBag.CreateMessage)
 )
 
