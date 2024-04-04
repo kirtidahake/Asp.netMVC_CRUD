@@ -12,20 +12,25 @@ namespace Asp.netMVC_CRUD.Models
     {
         [Key] //This is validation
         [Required]
-        [DisplayName("EMP ID")]
+        [DisplayName("EMPLOYEE ID")]
         public int Id { get; set; }
 
 
         [Required]
-        [DisplayName("EMP NAME")]
+        [DisplayName("EMPLOYEE NAME")]
         public string Name { get; set; }
 
         [Required]
-        [DisplayName("EMP DEPARTMENT")]
+        [DisplayName("EMPLOYEE DEPARTMENT")]
         public string Department { get; set; }
 
         [Required]
-        [DisplayName("EMP SALARY")]
+        [DisplayName("EMPLOYEE SALARY")]
         public int Salary { get; set; }
+
+        [Required]
+        [DisplayName("EMPLOYEE PHONE NUMBER")]
+        [RegularExpression(@"^\d{1,10}$", ErrorMessage = "phone number must be between 1 and 10 digits.")]
+        public string PhoneNumber { get; set; }
     }
 }

@@ -9,6 +9,6 @@ namespace Asp.netMVC_CRUD.Models
 {
     public class ServiceDataContext : DbContext
     {
-        public DbSet<Employee> emp { get; set; }
+        public DbSet<Employee>  emp { get; set; }
     }
 }

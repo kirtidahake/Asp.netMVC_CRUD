@@ -135,6 +135,14 @@
     <Compile Include="Migrations\202404030536337_Initial.Designer.cs">
       <DependentUpon>202404030536337_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202404040749538_AddPhoneNumberToEmployee.cs" />
+    <Compile Include="Migrations\202404040749538_AddPhoneNumberToEmployee.Designer.cs">
+      <DependentUpon>202404040749538_AddPhoneNumberToEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202404041058147_avb.cs" />
+    <Compile Include="Migrations\202404041058147_avb.Designer.cs">
+      <DependentUpon>202404041058147_avb.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\ServiceDataContext.cs" />
@@ -189,8 +197,10 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Create.cshtml" />
     <Content Include="Views\Home\Edit.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
+    <Content Include="Views\Home\Delete.cshtml" />
+    <Content Include="Views\Home\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -225,6 +235,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202404030536337_Initial.resx">
       <DependentUpon>202404030536337_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404040749538_AddPhoneNumberToEmployee.resx">
+      <DependentUpon>202404040749538_AddPhoneNumberToEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404041058147_avb.resx">
+      <DependentUpon>202404041058147_avb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
